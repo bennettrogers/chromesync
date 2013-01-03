@@ -1,0 +1,23 @@
+{
+    "name": "ChromeSync for Instapaper",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Keep Chrome and Instapaper bookmarks in sync",
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "http://www.instapaper.com/api/",
+        "https://www.instapaper.com/api/"
+    ],
+    "options_page": "options.html",
+    "background": {
+        "scripts": [
+            "script/lib/jquery.min.js",
+            "script/lib/oauth.js",
+            "script/lib/sha1.js",
+            "script/background.js",
+            "script/instapaper.js"
+        ],
+        "persistent": false
+    }
+}
